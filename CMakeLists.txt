@@ -1,6 +1,14 @@
-cmake_minimum_required(VERSION 3.13)  # CMake version check
-project(simple_example)               # Create project "simple_example"
-set(CMAKE_CXX_STANDARD 14)            # Enable c++14 standard
+cmake_minimum_required(VERSION 3.13)
+project(implementation)
 
-# Add executable target with source files listed in SOURCE_FILES variable
-add_executable(personality_generator ${SOURCE_FILES})
+set(CMAKE_CXX_STANDARD 17)
+
+include_directories(
+        include
+)
+
+set(SOURCE_FILES
+        src/human.cpp
+        )
+
+add_executable(personality_generator ${SOURCE_FILES} main.cpp)

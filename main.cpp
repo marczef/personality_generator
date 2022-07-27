@@ -1,6 +1,10 @@
 #include <iostream>
 
+#include "human.hpp"
+
 int main()
 {
-    std::cout<<"hello word"<<std::endl;
+    Human human1("sandra");
+
+    human1.wypisz_imie();
 }
