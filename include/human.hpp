@@ -18,11 +18,14 @@ public:
 
     Human(std::string name);
 
-    void wypisz_imie();
+    void GetName();
+    void GetTraits();
 
 private:
 
     std::string name;
+    std::vector<Trait> traits;
+    uint8_t age;
 
 };
 

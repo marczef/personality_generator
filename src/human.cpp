@@ -6,11 +6,22 @@
 
 Human::Human(std::string name) : name(name)
 {
-    std::cout<<"hello"<<std::endl;
+    traits.push_back(Trait(0.5));
 }
 
-void Human::wypisz_imie()
+void Human::GetName()
 {
-    std::cout<<"imie to "<<name<<std::endl;
+    std::cout<<"Your characters name is:  "<<name<<std::endl;
+}
 
+void Human::GetTraits()
+{
+    std::string sentence;
+    sentence += "Your character is:";
+    for(auto trait = traits.begin(); trait != traits.end(); trait++)
+    {
+        sentence += " " + trait->GetNameOfTrait() + ",";
+    }
+    sentence.pop_back();
+    std::cout<<sentence;
 }

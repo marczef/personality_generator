@@ -4,8 +4,8 @@
 
 int main()
 {
-    Human human1("sandra");
+    Human human1("Maciej");
 
-    human1.wypisz_imie();
-    Trait trait(0.5);
+    human1.GetName();
+    human1.GetTraits();
 }
