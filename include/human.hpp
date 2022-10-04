@@ -5,6 +5,10 @@
 #ifndef SIMPLE_EXAMPLE_HUMAN_HPP
 #define SIMPLE_EXAMPLE_HUMAN_HPP
 
+#pragma once
+
+#include "trait.hpp"
+
 #include <iostream>
 #include <string>
 

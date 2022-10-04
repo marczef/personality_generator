@@ -9,6 +9,7 @@ include_directories(
 
 set(SOURCE_FILES
         src/human.cpp
+        src/trait.cpp
         )
 
 add_executable(personality_generator ${SOURCE_FILES} main.cpp)
