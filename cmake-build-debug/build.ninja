@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/personality_generator/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target personality_generator
 
@@ -49,24 +49,45 @@ cmake_ninja_workdir = C$:/Users/User/OneDrive/Pulpit/Marcysia/github/personality
 
 build cmake_object_order_depends_target_personality_generator: phony || CMakeFiles/personality_generator.dir
 
-build CMakeFiles/personality_generator.dir/src/human.cpp.obj: CXX_COMPILER__personality_generator_Debug C$:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/personality_generator/src/human.cpp || cmake_object_order_depends_target_personality_generator
+build CMakeFiles/personality_generator.dir/src/human.cpp.obj: CXX_COMPILER__personality_generator_Debug C$:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/src/human.cpp || cmake_object_order_depends_target_personality_generator
   DEP_FILE = CMakeFiles\personality_generator.dir\src\human.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/personality_generator/include
+  INCLUDES = -IC:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/include
   OBJECT_DIR = CMakeFiles\personality_generator.dir
   OBJECT_FILE_DIR = CMakeFiles\personality_generator.dir\src
 
-build CMakeFiles/personality_generator.dir/src/trait.cpp.obj: CXX_COMPILER__personality_generator_Debug C$:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/personality_generator/src/trait.cpp || cmake_object_order_depends_target_personality_generator
+build CMakeFiles/personality_generator.dir/src/trait.cpp.obj: CXX_COMPILER__personality_generator_Debug C$:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/src/trait.cpp || cmake_object_order_depends_target_personality_generator
   DEP_FILE = CMakeFiles\personality_generator.dir\src\trait.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/personality_generator/include
+  INCLUDES = -IC:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/include
   OBJECT_DIR = CMakeFiles\personality_generator.dir
   OBJECT_FILE_DIR = CMakeFiles\personality_generator.dir\src
 
-build CMakeFiles/personality_generator.dir/main.cpp.obj: CXX_COMPILER__personality_generator_Debug C$:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/personality_generator/main.cpp || cmake_object_order_depends_target_personality_generator
+build CMakeFiles/personality_generator.dir/src/parents/parent.cpp.obj: CXX_COMPILER__personality_generator_Debug C$:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/src/parents/parent.cpp || cmake_object_order_depends_target_personality_generator
+  DEP_FILE = CMakeFiles\personality_generator.dir\src\parents\parent.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/include
+  OBJECT_DIR = CMakeFiles\personality_generator.dir
+  OBJECT_FILE_DIR = CMakeFiles\personality_generator.dir\src\parents
+
+build CMakeFiles/personality_generator.dir/src/parents/mother.cpp.obj: CXX_COMPILER__personality_generator_Debug C$:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/src/parents/mother.cpp || cmake_object_order_depends_target_personality_generator
+  DEP_FILE = CMakeFiles\personality_generator.dir\src\parents\mother.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/include
+  OBJECT_DIR = CMakeFiles\personality_generator.dir
+  OBJECT_FILE_DIR = CMakeFiles\personality_generator.dir\src\parents
+
+build CMakeFiles/personality_generator.dir/src/parents/father.cpp.obj: CXX_COMPILER__personality_generator_Debug C$:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/src/parents/father.cpp || cmake_object_order_depends_target_personality_generator
+  DEP_FILE = CMakeFiles\personality_generator.dir\src\parents\father.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/include
+  OBJECT_DIR = CMakeFiles\personality_generator.dir
+  OBJECT_FILE_DIR = CMakeFiles\personality_generator.dir\src\parents
+
+build CMakeFiles/personality_generator.dir/main.cpp.obj: CXX_COMPILER__personality_generator_Debug C$:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/main.cpp || cmake_object_order_depends_target_personality_generator
   DEP_FILE = CMakeFiles\personality_generator.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/personality_generator/include
+  INCLUDES = -IC:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/include
   OBJECT_DIR = CMakeFiles\personality_generator.dir
   OBJECT_FILE_DIR = CMakeFiles\personality_generator.dir
 
@@ -78,7 +99,7 @@ build CMakeFiles/personality_generator.dir/main.cpp.obj: CXX_COMPILER__personali
 #############################################
 # Link the executable personality_generator.exe
 
-build personality_generator.exe: CXX_EXECUTABLE_LINKER__personality_generator_Debug CMakeFiles/personality_generator.dir/src/human.cpp.obj CMakeFiles/personality_generator.dir/src/trait.cpp.obj CMakeFiles/personality_generator.dir/main.cpp.obj
+build personality_generator.exe: CXX_EXECUTABLE_LINKER__personality_generator_Debug CMakeFiles/personality_generator.dir/src/human.cpp.obj CMakeFiles/personality_generator.dir/src/trait.cpp.obj CMakeFiles/personality_generator.dir/src/parents/parent.cpp.obj CMakeFiles/personality_generator.dir/src/parents/mother.cpp.obj CMakeFiles/personality_generator.dir/src/parents/father.cpp.obj CMakeFiles/personality_generator.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\personality_generator.dir
@@ -93,7 +114,7 @@ build personality_generator.exe: CXX_EXECUTABLE_LINKER__personality_generator_De
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\User\OneDrive\Pulpit\Marcysia\github\personality_generator\personality_generator\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\User\OneDrive\Pulpit\Marcysia\github\personality_generator\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -104,7 +125,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\User\OneDrive\Pulpit\Marcysia\github\personality_generator\personality_generator\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\User\OneDrive\Pulpit\Marcysia\github\personality_generator\personality_generator -BC:\Users\User\OneDrive\Pulpit\Marcysia\github\personality_generator\personality_generator\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\User\OneDrive\Pulpit\Marcysia\github\personality_generator\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\User\OneDrive\Pulpit\Marcysia\github\personality_generator -BC:\Users\User\OneDrive\Pulpit\Marcysia\github\personality_generator\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -122,7 +143,7 @@ build personality_generator: phony personality_generator.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/personality_generator/cmake-build-debug
+# Folder: C:/Users/User/OneDrive/Pulpit/Marcysia/github/personality_generator/cmake-build-debug
 
 build all: phony personality_generator.exe
 

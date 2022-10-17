@@ -2,8 +2,8 @@
 // Created by User on 04.10.2022.
 //
 
-#ifndef PERSONALITY_GENERATOR_TRAIT_HPP
-#define PERSONALITY_GENERATOR_TRAIT_HPP
+#ifndef TRAIT_HPP
+#define TRAIT_HPP
 
 #include "utilities.hpp"
 
@@ -25,4 +25,4 @@ private:
 
 };
 
-#endif //PERSONALITY_GENERATOR_TRAIT_HPP
+#endif //TRAIT_HPP

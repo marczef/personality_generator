@@ -4,8 +4,9 @@
 
 int main()
 {
-    Human human1("Maciej");
+    Human human1;
 
-    human1.GetName();
     human1.GetTraits();
+
+
 }

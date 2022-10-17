@@ -4,13 +4,19 @@
 
 #include "human.hpp"
 
-Human::Human(std::string name) : name(name)
+Human::Human() : mother(father)
 {
+    GetName();
+
+    father = Father();
+    father.printHomeStatus();
+
     traits.push_back(Trait(0.5));
 }
 
 void Human::GetName()
 {
+    std::cin>>name;
     std::cout<<"Your characters name is:  "<<name<<std::endl;
 }
 
